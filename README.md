@@ -1,2 +1,19 @@
-# crypto_clustering.ipynb
-You and Martha have done your research. You understand what unsupervised learning is used for, how to process data, how to cluster, how to reduce your dimensions, and how to reduce the principal components using PCA. It’s time to put all these skills to use by creating an analysis for your clients who are preparing to get into the cryptocurrency market. Martha is a senior manager for the Advisory Services Team at Accountability Accounting, one of your most important clients. Accountability Accounting, a prominent investment bank, is interested in offering a new cryptocurrency investment portfolio for its customers. The company, however, is lost in the vast universe of cryptocurrencies. So, they’ve asked you to create a report that includes what cryptocurrencies are on the trading market and how they could be grouped to create a classification system for this new investment. The data Martha will be working with is not ideal, so it will need to be processed to fit the machine learning models. Since there is no known output for what Martha is looking for, she has decided to use unsupervised learning. To group the cryptocurrencies, Martha decided on a clustering algorithm. She’ll use data visualizations to share her findings with the board. This new assignment consists of four technical analysis deliverables. You will submit the following: Deliverable 1: Preprocessing the Data for PCA Deliverable 2: Reducing Data Dimensions Using PCA Deliverable 3: Clustering Cryptocurrencies Using K-means Deliverable 4: Visualizing Cryptocurrencies Results
+## Overview
+
+The goal of this project is to provide a report for an investment bank that is considering launching a new bitcoin investment portfolio. The paper details which cryptocurrencies are available for purchase and how they may be classified to develop a categorization system for this new investment. I'm using Crypto Compare's data to run unsupervised machine learning algorithms in order to finish this project.
+
+## Results
+
+I began by cleaning up the data to include only active trading cryptocurrencies with a specified algorithm and a comprehensive set of data. As a result, I now have 532 distinct cryptocurrencies. I then constructed a three-dimensional graph to demonstrate how the various cryptocurrencies are organised. Each point has a name as well as the algorithm that was used to produce it.
+<img width="639" alt="Review_1" src="https://user-images.githubusercontent.com/83256206/137974828-15d65572-2970-43df-ae56-e4059ddd1884.png">
+
+
+Then I made a two-dimensional graph to demonstrate the link between total coin supply and total coins mined, so you could see how one currency stacks up against the others. The name of the currency is included in each point.
+
+<img width="550" alt="Review_2" src="https://user-images.githubusercontent.com/83256206/137974855-5e5f9473-b285-4b2f-b9f3-f59fd75752e7.png">
+
+
+## Summary
+
+There are four distinct groups seen in the three-dimensional graph. Most currencies fall into one of two categories, which are clumped together quite closely. The first group has a few distinct currencies that are separated from the others, whereas the second group just has one currency. This demonstrates that many currencies behave similarly, but a few stand out as outliers. These outliers might be overachievers or underachievers, but I'd have to do additional research to find that out. Looking at the total coin supply versus total coins mined graph is one way I can make a connection.
+The majority of the data points for the two main categories are spread between 0% and 40% of the biggest currency by volume. The group with a few currencies is extremely near to 0% of the largest currency, but the group with only one currency is at 100% since it is the largest. I'd want to do further research on these cryptocurrencies by looking at their history price in order to better understand their performance. This would allow investors to determine how hazardous or reliable their investment is dependent on the many cryptocurrencies they invest in.
